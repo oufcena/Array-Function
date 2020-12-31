@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Array & Function</h1>
+
+<script>
+var arr = [
+  `(function(){return 'Hello World!';})();`,
+  `(function(input){return input;})('Hello Args!');`,
+  `(function(input='Hello Default!'){return input;})();`
+];
+
+document.body.innerHTML += `
+<h2>${eval(arr[0])}</h2>
+<h2>${eval(arr[1])}</h2>
+<h2>${eval(arr[2])}</h2>
+`;
+</script>
+
+</body>
+</html>
+
+
